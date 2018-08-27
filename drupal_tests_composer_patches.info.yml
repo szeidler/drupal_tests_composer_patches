@@ -1,0 +1,7 @@
+name: Drupal Tests Composer Patches
+description: Tests the drupal_tests composer patches changes
+type: module
+core: 8.x
+
+dependencies:
+  - profile:profile
