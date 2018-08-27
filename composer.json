@@ -1,0 +1,33 @@
+{
+  "name": "ramsalt/drupal_tests_composer_patches",
+  "description": "",
+  "type": "drupal-module",
+  "authors": [
+    {
+      "name": "Stephan Zeidler",
+      "email": "stephan@ramsalt.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "drupal/profile": "^1.0"
+  },
+  "require-dev": {
+    "cweagans/composer-patches": "^1.6",
+    "behat/mink-selenium2-driver": "^1.3@dev",
+    "behat/mink-extension": "v2.2",
+    "drupal/coder": "^8.2",
+    "drupal/drupal-extension": "^4.0@dev",
+    "bex/behat-screenshot": "dev-master",
+    "phpmd/phpmd": "dev-master",
+    "phpmetrics/phpmetrics": "dev-master"
+  },
+  "extra": {
+    "patches": {
+      "drupal/profile": {
+        "Make profile label work with tokens and expose them in the UI": "https://www.drupal.org/files/issues/2018-03-11/2900573-17.patch",
+        "PrivateTempStoreFactory is scheduled for removal in Drupal 9.0.0": "https://www.drupal.org/files/issues/2018-08-16/profile-fix_private_tempstore-2993092-2.patch"
+      }
+    }
+  }
+}
