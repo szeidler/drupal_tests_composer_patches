@@ -23,11 +23,6 @@
     "phpmetrics/phpmetrics": "dev-master"
   },
   "extra": {
-    "patches": {
-      "drupal/profile": {
-        "Make profile label work with tokens and expose them in the UI": "https://www.drupal.org/files/issues/2018-03-11/2900573-17.patch",
-        "PrivateTempStoreFactory is scheduled for removal in Drupal 9.0.0": "https://www.drupal.org/files/issues/2018-08-16/profile-fix_private_tempstore-2993092-2.patch"
-      }
-    }
+    "patches-file": "composer.patches.json"
   }
 }
